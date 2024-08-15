@@ -67,6 +67,12 @@ body {
     margin-left: 20px;
 }
 
+.header img {
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .FAQ-info {
     display: flex;
     flex-direction: column;
