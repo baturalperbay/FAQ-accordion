@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+}
+
+.bg-pattern {
+    flex: 0;
+    z-index: -1;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    margin: auto auto auto auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    min-height: 0;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto auto auto auto;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-pattern {
+        background-image: url("assets/images/background-pattern-mobile.svg");
+        height: 35%;
+    }
+
+    .info-box {
+        width: 85%;
+    }
+
+    .header h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.header {
+    display: flex;
+    margin-left: 5%;
+}
+
+.header h3 {
+    font-size: 45px;
+    margin-left: 20px;
+}
+
+.FAQ-info {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+.FAQ-info > * {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.question > p {
+    font-weight: 700;
+}
+
+.accordion {
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    width: 30px;
+    height: 31px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 30px;
+    background-image: url('assets/images/icon-plus.svg');
+    background-repeat: no-repeat;
+}
+
+.active {
+    background-image: url('assets/images/icon-minus.svg')
+}
+
+.answer {
+    display: none;
+}
+
+.answer-text {
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+
+
